@@ -1,0 +1,82 @@
+.project-Container {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+  display: grid;
+  /*height: 320px;*/
+  width: 90%;
+  margin-bottom: 62px;
+  padding: 20px;
+}
+
+.project {
+  background-color: #fff;
+  border: 1px solid #80808030;
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  color: inherit;
+  /*max-height: 400px;*/
+}
+
+.project:hover {
+  /*transform: rotate(5deg);*/
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.project h3 {
+  font-size: 2rem;
+  color: var(--heading-color);
+  margin-bottom: 50px;
+}
+.project span {
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.project p {
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+.project ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 42px;
+}
+.project ul li {
+  margin-right: 10px;
+}
+
+.project .arrow {
+  height: 30px;
+}
+
+.arrow-container {
+  direction: rtl;
+}
+
+.openModalBTN {
+  border: none;
+  background: transparent;
+}
+.openModalBTN img {
+  width: 30px;
+  height: fit-content;
+}
+
+.status-trash-Div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-form label {
+  margin: 0;
+}
+
+.modalBtn {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}

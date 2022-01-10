@@ -1,0 +1,131 @@
+.onlineUsers {
+  margin-left: auto;
+  width: 250px;
+  min-width: 250px;
+  /* padding: 30px;*/
+  box-sizing: border-box;
+  background: #fbfbfb;
+  color: var(--heading-color);
+  box-shadow: 0 4px 4px -1px #333;
+  position: fixed;
+  margin-right: 10px;
+
+  bottom: 0;
+  right: 0;
+  max-height: 70%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.onlineUsers-headline {
+  cursor: pointer;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 1.2em;
+  background: var(--bg-nav);
+  color: white;
+  width: 250px;
+  min-width: 250px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.usersList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.lastActive {
+  font-size: 10px;
+  color: darkgrey;
+  margin-left: auto;
+
+  margin-right: 51px;
+}
+
+.nameAndImg {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.usersListDisplay .avatar {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.hidden {
+  display: none;
+  height: 0;
+}
+
+.show {
+  display: block;
+  overflow-y: auto;
+  background: #fbfbfb;
+  color: var(--heading-color);
+  /*height: 100vh;*/
+}
+
+.onlineMark {
+  width: 12px;
+  height: 12px;
+  background: #0ebb50;
+  border-radius: 50%;
+}
+
+.offlineMark {
+  width: 12px;
+  height: 12px;
+}
+
+@media (max-width: 900px) {
+  .onlineUsers {
+    padding: 0;
+    /* position: absolute;*/
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    min-width: 200px;
+    border: 0;
+    outline: 0;
+    transition: 0.3s;
+    color: var(--bg-nav);
+    margin-left: 10px;
+    box-shadow: 0 4px 4px -1px #333;
+  }
+
+  .onlineUsers-headline {
+    background: var(--bg-nav);
+    color: white;
+    position: sticky;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 0;
+
+    width: 200px;
+    min-width: 200px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .show {
+    display: block;
+    overflow-y: auto;
+    background: #fbfbfb;
+    color: var(--heading-color);
+  }
+  .usersListDisplay {
+    max-height: 150px;
+  }
+
+  .lastActive {
+    margin-right: 15px;
+  }
+}

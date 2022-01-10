@@ -1,0 +1,11 @@
+.loginContainer div {
+  background: white;
+  border: 1px solid #80808085;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.loginContainer {
+  margin: 0 auto;
+}

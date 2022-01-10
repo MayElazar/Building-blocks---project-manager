@@ -1,0 +1,12 @@
+.createContainer {
+  margin: 0 auto;
+}
+
+.createProjContainer {
+  background: white;
+  border: 1px solid #80808085;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 20px;
+}
